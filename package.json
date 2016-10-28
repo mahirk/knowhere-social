@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/mahirk/knowhere.git"
+    "url": "git+ssh://git@github.com/mahirk/knowhere-social.git"
   },
   "keywords": [
     "social",
@@ -18,9 +18,9 @@
   "author": "mahirk",
   "license": "SEE LICENSE IN LICENSE",
   "bugs": {
-    "url": "https://github.com/mahirk/knowhere/issues"
+    "url": "https://github.com/mahirk/knowhere-social/issues"
   },
-  "homepage": "https://github.com/mahirk/knowhere#readme",
+  "homepage": "https://github.com/mahirk/knowhere-social#readme",
   "dependencies": {
     "express": "^4.14.0",
     "node-tweet-stream": "^2.0.1",

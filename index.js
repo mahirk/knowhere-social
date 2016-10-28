@@ -5,7 +5,7 @@ var io = require('socket.io')(http);
 var cfg = require('./config.json');
 const path = require('path');
 var tw = require('node-tweet-stream')(cfg);
-var port = process.env.port || 7414;
+var port = process.env.port || 1337;
 
 // CORS
 app.use(function(req, res, next) {
@@ -29,6 +29,6 @@ app.get('/', function(req, res){
   res.sendFile(__dirname + '/index.html');
 });
 
-http.listen(3000, function(){
-  console.log('listening on *:3000');
+http.listen(port, function(){
+  console.log('listening on *:' + port);
 });
