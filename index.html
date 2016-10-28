@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<title>Knowhere: Social Wall</title>
+<link rel="stylesheet" type="text/css" href="tweet.css">
+</head>
+
+<body>
+
+<div id="tweets"></div>
+
+<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+<script>
+  var socket = io.connect('/'),
+      tweets = document.getElementById('tweets');
+      socket.on('tweet', function (data) {
+        var addedHtml = '<div class="tweet">'+ '<span class="userId"> @' + data.user.screen_name + '</span><br>' + data.text;
+        if(data.entities.media) {
+          addedHtml += '<br> <img src="' + data.entities.media[0].media_url + '\" width=150 height=150 />';
+        }
+        addedHtml += '</div>';
+        tweets.innerHTML = addedHtml + tweets.innerHTML;
+      });
+</script>
+</body>
+</html>

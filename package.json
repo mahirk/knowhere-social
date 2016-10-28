@@ -1,0 +1,29 @@
+{
+  "name": "knowhere",
+  "version": "0.0.1",
+  "description": "Social Wall",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mahirk/knowhere.git"
+  },
+  "keywords": [
+    "social",
+    "wall",
+    "twitter"
+  ],
+  "author": "mahirk",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/mahirk/knowhere/issues"
+  },
+  "homepage": "https://github.com/mahirk/knowhere#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "node-tweet-stream": "^2.0.1",
+    "socket.io": "^1.5.1"
+  }
+}
